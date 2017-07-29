@@ -27195,10 +27195,19 @@
 	var React = __webpack_require__(1);
 
 	var About = function About(props) {
-	  return React.createElement(
-	    'h3',
+	  React.createElement(
+	    'div',
 	    null,
-	    'About Components'
+	    React.createElement(
+	      'h3',
+	      null,
+	      'About'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Welcome to About page'
+	    )
 	  );
 	};
 
@@ -27224,7 +27233,7 @@
 	    ),
 	    ' ',
 	    React.createElement(
-	      'h4',
+	      'p',
 	      null,
 	      ' Welcome to example pages'
 	    ),

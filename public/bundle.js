@@ -27195,7 +27195,7 @@
 	var React = __webpack_require__(1);
 
 	var About = function About(props) {
-	  React.createElement(
+	  return React.createElement(
 	    'div',
 	    null,
 	    React.createElement(

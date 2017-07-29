@@ -25647,7 +25647,7 @@
 	      if (isLoading) {
 	        return React.createElement(
 	          'h3',
-	          null,
+	          { className: 'text-center' },
 	          'Fetching Weather..'
 	        );
 	      } else if (temp && location) {
@@ -25658,9 +25658,9 @@
 	      'div',
 	      null,
 	      React.createElement(
-	        'h3',
-	        null,
-	        ' Get Weather components'
+	        'h1',
+	        { className: 'text-center' },
+	        ' Get Weather'
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
@@ -25702,7 +25702,7 @@
 	        React.createElement('input', { type: 'text', ref: 'location' }),
 	        React.createElement(
 	          'button',
-	          null,
+	          { className: 'button expanded hollow' },
 	          'Get Weather'
 	        )
 	      )
@@ -25716,7 +25716,7 @@
 /* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -25725,16 +25725,16 @@
 	      location = props.location;
 
 	  return React.createElement(
-	    'div',
+	    "div",
 	    null,
 	    React.createElement(
-	      'h3',
-	      null,
-	      'It\'s ',
+	      "h3",
+	      { className: "text-center" },
+	      "It's ",
 	      temp,
-	      ' in ',
+	      " in ",
 	      location,
-	      '.'
+	      "."
 	    )
 	  );
 	};
@@ -27302,23 +27302,52 @@
 /* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'div',
+	    "div",
 	    null,
 	    React.createElement(
-	      'h3',
-	      null,
-	      'About'
+	      "h1",
+	      { className: "text-center" },
+	      "About"
 	    ),
 	    React.createElement(
-	      'p',
+	      "p",
 	      null,
-	      'Welcome to About page'
+	      "This is a weather aplication build on React. I have built this while learning react"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Here are some of the the tools I used"
+	    ),
+	    React.createElement(
+	      "ul",
+	      null,
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "#" },
+	          "React framework"
+	        ),
+	        " - This is the Javascript framework used."
+	      ),
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "#" },
+	          "Open Weather Map"
+	        ),
+	        "- This provided the api to search the weather."
+	      )
 	    )
 	  );
 	};

@@ -27214,9 +27214,21 @@
 
 	var Examples = function Examples(props) {
 	  return React.createElement(
-	    'h3',
+	    'div',
 	    null,
-	    'Examples Components'
+	    ' ',
+	    React.createElement(
+	      'h3',
+	      null,
+	      'Examples'
+	    ),
+	    ' ',
+	    React.createElement(
+	      'h4',
+	      null,
+	      ' Welcome to example pages'
+	    ),
+	    ' '
 	  );
 	};
 
